@@ -27,7 +27,7 @@ class Venue(db.Model):
     shows = db.relationship('Show', backref='Venue', lazy=True)
 
     def __repr__(self):
-        return f'<Venue id: {self.id}, name: {self.name}, state: {self.state}, address: {self.address}, phone: {self.phone}, image_link: {self.image_link}, facebook_link: {self.facebook_link}, image_link: {self.image_link}, genres: {self.genres}, website: {self.website}, seeking_talent: {self.seeking_talent}, seeking_description: {self.seeking_description}, show: {self.show} >'
+        return f'<Venue id: {self.id}, name: {self.name}, state: {self.state}, address: {self.address}, phone: {self.phone}, image_link: {self.image_link}, facebook_link: {self.facebook_link}, image_link: {self.image_link}, genres: {self.genres}, website: {self.website}, seeking_talent: {self.seeking_talent}, seeking_description: {self.seeking_description}>'
 
 # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
